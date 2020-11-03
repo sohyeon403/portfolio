@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body{
+  background-color: #232123;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+
+
+    /*
+    pointer-event 속성을 통해 엘리먼트가 마우스 이벤트
+    (호버, 클릭, 드래그 등)에 어떻게 반응할지를 지정할 수 있다. 
+    대부분의 속성 값은 SVG 전용이므로, 
+    pointer-events: none을 설정하여 마우스 이벤트의 타겟이
+    될 수 없도록 할 수 있다는 점만 기억하자.
+    */
+    
+
+.clearfix{
+  clear: both;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+h2.title{display:none}
