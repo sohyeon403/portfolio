@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+body {
+    overflow: hidden;
+    background: #333;
+    background-image: url(../img/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+
+.popup_wrap {
+    margin: 0 auto;
+    position: relative;
+}
+
+.popup_text {
+    min-width: 250px;
+    width: 250px;
+    min-height: 150px;
+    position: absolute;
+    padding: 15px 35px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    line-height: 30px;
+    top: 130px;
+    left: 660px;
+    z-index: 12;
+}
+
+.popup_chrome {
+    position: absolute;
+    top: 130px;
+    left: 10px;
+    letter-spacing: 10px;
+    z-index: 10;
+}
+
+.popup_text p {
+    clear: both;
+    text-align: center;
+    font-size: 20px;
+    font-size: 14px;
+    margin-top: 38px;
+
+}
+
+.popup_text p a {
+    color: #d91900;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+.popup_chrome {
+    background: rgba(255,255,255,0.6);
+    color: #333;
+    padding: 10px;
+}
+
+span.chrome {
+    color: #ff0000;
+    font-weight: bold;
+
+}
+
+
+section {
+    width: 1280px;
+    margin: 0px auto;
+    position: relative;
+}
+
+article.keyword {
+    display: block;
+    z-index: 9999;
+}
+
+article > h3 {
+    position: absolute;
+    top: 200px;
+    font-size: 78px;
+    text-transform: uppercase;
+    z-index: 10 !important;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+span.text_kor {
+    padding-left: 50px;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+.img_wrap > img {
+    position: absolute;
+    z-index: 10;
+}
+
+.img_wrap > img:first-child {
+    top: 160px;
+    right: 10px;
+}
+
+.img_wrap > img:nth-child(2) {
+    top: 170px;
+    right: 15px;
+    opacity: 0.4;
+}
+
+.img_wrap > img:nth-child(3) {
+    top: 165px;
+    right: 12px;
+    opacity: 0.2;
+}
+
+.brush_wrap > img {
+    position: absolute;
+    opacity: 0.8;
+}
+
+.brush_wrap > img:first-child {
+    top: 0px;
+    width: 824px;
+    left: 30px;
+    transform: rotate(20deg);
+    animation: scale01 0.5s linear 1;
+}
+
+@keyframes scale01 {
+    0% {
+        transform: scale(0) rotate(20deg);
+        opacity: 0;
+    }
+
+    20% {
+        transform: scale(0.2) rotate(20deg);
+        opacity: 0.2;
+    }
+
+    40% {
+        transform: scale(0.4) rotate(20deg);
+        opacity: 0.4;
+    }
+
+    60% {
+        transform: scale(0.5) rotate(20deg);
+        opacity: 0.6;
+    }
+
+    80% {
+        transform: scale(0.8) rotate(20deg);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1) rotate(20deg);
+        opacity: 1;
+    }
+}
+
+.brush_wrap > img:nth-child(2) {
+    width: 600px;
+    left: 380px;
+    top: 100px;
+    animation: scale02 1.2s linear 1;
+}
+
+@keyframes scale02 {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: scale(0.2);
+        opacity: 0.2;
+    }
+
+    40% {
+        transform: scale(0.4);
+        opacity: 0.4;
+    }
+
+    60% {
+        transform: scale(0.5);
+        opacity: 0.6;
+    }
+
+    80% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.brush_wrap > img:nth-child(3) {
+    width: 700px;
+    left: 40px;
+    top: 180px;
+    animation: scale03 2s linear 1;
+}
+
+@keyframes scale03 {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: scale(0.2);
+        opacity: 0.2;
+    }
+
+    40% {
+        transform: scale(0.4);
+        opacity: 0.4;
+    }
+
+    60% {
+        transform: scale(0.5);
+        opacity: 0.6;
+    }
+
+    80% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.brush_wrap > img:nth-child(4) {
+    width: 800px;
+    right: -20px;
+    top: -40px;
+    animation: scale04 1.5s linear 1;
+}
+
+@keyframes scale04 {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: scale(0.2);
+        opacity: 0.2;
+    }
+
+    40% {
+        transform: scale(0.4);
+        opacity: 0.4;
+    }
+
+    60% {
+        transform: scale(0.5);
+        opacity: 0.6;
+    }
+
+    80% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.brush_wrap > img:nth-child(5) {
+    width: 450px;
+    right: 150px;
+    top: 300px;
+    animation: scale05 2s linear 1;
+}
+
+@keyframes scale05 {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: scale(0.2);
+        opacity: 0.1;
+    }
+
+    40% {
+        transform: scale(0.4);
+        opacity: 0.2;
+    }
+
+    60% {
+        transform: scale(0.5);
+        opacity: 0.3;
+    }
+
+    80% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.text_wrap {
+    position: absolute;
+    padding-top: 290px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 70px;
+    color: #fff;
+    z-index: 10;
+    opacity: .9;
+}
+
+.text_wrap > p {
+    padding: 4px 42px;
+}
