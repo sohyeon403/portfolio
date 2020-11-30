@@ -24,7 +24,7 @@ $subject = strip_tags(htmlspecialchars($_POST['subject']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 	
 // 이메일을 생성하고 메일을 전송하는 부분
-$to = 'sohyun9743@naver.com'; // 받는 측의 이메일 주소를 기입하는 부분
+$to = 'aprils6220@gmail.com'; // 받는 측의 이메일 주소를 기입하는 부분
 $email_subject = "FROM:  $name"; // 메일 제목에 해당하는 부분
 $email_body = "본 메일은 홈페이지 폼메일로부터 전송된 이메일입니다..\n\n"."세부정보는 다음과 같습니다.\n\nSubject: $subject\n\nName: $name\n\nEmail: $email_address\n\nMessage:\n$message";
 $headers = "Reply-To: $email_address\r"; // 답장 주소
