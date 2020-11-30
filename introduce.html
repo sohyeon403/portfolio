@@ -300,8 +300,8 @@
                             </div>
                         </li>
                     </ul>
-                    
-                    
+
+
                     <ul class="micro_soft">
                         <li>
                             <figure>
@@ -322,7 +322,7 @@
                                 </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <figure>
                                 <img src="./img/excel.png" alt="excel">
@@ -342,7 +342,7 @@
                                 </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <figure>
                                 <img src="./img/powerpoint.png" alt="powerpoint">
@@ -362,7 +362,7 @@
                                 </div>
                             </div>
                         </li>
-                        
+
                     </ul>
 
                 </div>
@@ -382,12 +382,13 @@
 
     <!--제이쿼리 라이브러리-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-
+    
+    <!--제이쿼리 스킬바 서식 삽입-->
+    <script src="./js/skillbar.js"></script>
 
     <!--제이쿼리 탭키 서식 삽입-->
     <script src="./js/tab.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script>
         let isActive = false;
 
@@ -403,34 +404,6 @@
         });
     </script>
 
-
-    <!--제이쿼리 진행바 서식 삽입-->
-
-    <script>
-        const offsetTop = $(".container").offset().top;
-        $(window).scroll(function() {
-            const height = $(window).height();
-            if ($(window).scrollTop() + height > offsetTop) {
-                jQuery(".progress-bar").each(function() {
-                    jQuery(this).find(".progress-content").animate({
-                            width: jQuery(this).attr("data-percentage")
-                        },
-                        2000
-                    );
-
-                    jQuery(this).find(".progress-number-mark").animate({
-                        left: jQuery(this).attr("data-percentage")
-                    }, {
-                        duration: 2000,
-                        step: function(now, fx) {
-                            const data = Math.round(now);
-                            jQuery(this).find(".percent").html(data + "%");
-                        }
-                    });
-                });
-            }
-        });
-    </script>
 
 
 
