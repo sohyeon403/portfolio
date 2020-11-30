@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sohyeon's portfolio</title>
+    
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <link href="./css/contact.css" rel="stylesheet" type="text/css">
+    
+
+<!--   폰트링크-->
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <header>
+        <div class="header_wrap">
+            <h1><a href="index.html" title="메인페이지로 바로가기"><img src="./img/top_logo_white.png"></a></h1>
+
+
+            <div class="gnb_wrap">
+                <ul class="gnb_left">
+                    <li><a href="index.html" title="home">home</a></li>
+                    <li><a href="portfolio_concept.html" title="personal branding">portfolio concept</a></li>
+                    <li><a href="contact.html" title="contact">contact</a></li>
+                </ul>
+
+                <ul class="gnb_right">
+                    <li><a href="introduce.html" title="introduce">introduce</a></li>
+                    <li><a href="portfolio.html" title="portfolio">renewal portfolio</a></li>
+                    <li><a href="project.html" title="project">project</a></li>
+                </ul>
+            </div>
+
+
+<div class="menu_wrap">
+            <div class="js-menu menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+
+    <nav class="toggleMenu">
+        <ul>
+            <li class="clearfix"><a href="index.html" title="home">home</a></li>
+
+            <li class="clearfix"><a href="portfolio_concept.html" title="personal branding">portfolio concept</a></li>
+
+            <li class="clearfix"><a href="introduce.html" title="introduce">introduce</a></li>
+
+            <li class="clearfix"><a href="portfolio.html" title="protfolio">renewal portfolio</a></li>
+
+            <li class="clearfix"><a href="project.html" title="project">project</a></li>
+
+            <li class="clearfix"><a href="contact.html" title="contact">contact</a></li>
+        </ul>
+    </nav>
+    
+       
+       
+<section>
+       
+<h2>contact</h2>
+    <div class="wrap_form">
+    <form name="contact" method="post" action="contact_me1.php">
+       
+       
+       
+        <fieldset>
+            <legend>Contact Me</legend>
+            <p>궁금한 점이 있으시면 언제든 메일을 보내주세요!</p>
+            
+<!--            1. 제목-->
+            <div class="field">
+               <label for="subject"></label>
+               <input type="text" name="subject" id="subject" placeholder="제목을 입력해주세요. ">
+            </div>
+            
+<!--            2. 이름            -->
+            <div class="field">
+               <label for="name"></label>
+               <input type="text" name="name" id="name" placeholder="이름을 입력해주세요.">
+            </div>
+            
+            
+            
+<!--            3. 이메일-->
+            <div class="field">
+               <label for="text"></label>
+               <input type="text" placeholder="메일주소를 입력하세요." name="email" id="email">
+            </div>
+            
+            
+<!--            4. 내용-->
+            <div class="field">
+               <label for="email"></label>
+                <textarea name="message" id="message" rows="5"></textarea>
+            </div>
+            
+            
+<!--            5. 보내기-->
+           
+           <ul>
+               <li class="btn"><input type="submit" value="보내기"></li>
+           </ul>
+        </fieldset>
+    </form>
+      </div>
+       </section>
+       
+       
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        let isActive = false;
+
+        $('.js-menu').on('click', function() {
+            if (isActive) {
+                $(this).removeClass('active');
+                $('body').removeClass('menu-open');
+            } else {
+                $(this).addClass('active');
+                $('body').addClass('menu-open');
+            }
+            isActive = !isActive;
+        });
+    </script>
+</body>
+</html>
