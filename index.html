@@ -20,7 +20,6 @@
 
 
 
-
 </head>
 
 <body>
@@ -131,6 +130,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/popup.js"></script>
 
     <script>
         let isActive = false;
@@ -145,31 +145,6 @@
             }
             isActive = !isActive;
         });
-
     </script>
 
-    <script>
-        $(function() {
-            const overlay = $('<div id="overlay"></div>');
-            overlay.show();
-            overlay.appendTo(document.body);
-            $('.popup_wrap').show();
-            $('.close').click(function() {
-               $('.popup_text').animate({'top':'280px'},200).delay(100).animate({'top':'-500px','opacity':'.5'},300);
-                return false;
-
-
-
-                const chrome = $('<div id="chrome"></div>');
-                chrome.show();
-                overlay.appendTo(document.body);
-
-            });
-        });
-
-    </script>
-
-
-</body>
-
-</html>
+</body></html>
