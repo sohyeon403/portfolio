@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+section {
+    width: 1280px;
+    margin: 0px auto;
+    position: relative;
+
+}
+
+div.wrap_form {
+    padding-top: 120px;
+}
+
+fieldset {
+    padding: 20px 0px 80px 0px;
+    text-align: center;
+}
+
+fieldset>p{
+    padding: 10px;
+}
+h2 {
+    position: absolute;
+    font-size: 50px;
+    transform: rotate(-90deg);
+    width: 800px;
+    text-transform: uppercase;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 10px;
+    font-weight: 900;
+    left: -430px;
+}
+
+
+
+legend {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+        text-transform: uppercase;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: -2px;
+}
+
+#id {
+    width: 800px;
+}
+
+input[type=text] {
+    width: 1200px;
+    height: 40px;
+    display: inline;
+    text-align: center;
+    font-size: 20px;
+
+    margin: 8px;
+
+    
+}
+
+
+input[type=submit] {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background: #d5d500;
+    color:#000;
+    border: 0px;
+    transition: 0.5s;
+}
+
+ul>li.btn{
+    padding: 20px;
+}
+
+input[type=submit]:hover{
+    background:#000;
+    color:#fff
+}
+
+textarea {
+    width: 1200px;
+    height: 500px;
+    font-size: 18px;
+}
