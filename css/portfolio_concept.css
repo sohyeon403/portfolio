@@ -4,7 +4,7 @@ h2 {
     text-transform: uppercase;
     color: #fff;
 }
-
+.display_none{display: none;}
 h2.title {
     font-size: 50px;
     width: 1200px;
@@ -169,7 +169,7 @@ article.portfolio_color .main_paragraph{
 }
 
 
-ul.wrap_font_dohyun{
+ul.wrap_font_dohyeon, .dohyeon{
     font-family: 'Do Hyeon', sans-serif;
 }
 
@@ -184,18 +184,16 @@ article.portfolio_structure{
 }
 
 .typogrhapy{
-    height: 300px;
+    height: 60px;
 }
 
 .wrap_font>li{padding-bottom: 20px;
 }
 .wrap_font ul{padding: 20px 0px;}
 .wrap_font>ul>li:nth-of-type(1){font-size: 48px;padding-bottom: 16px;}
-.wrap_font>ul>li:nth-child(2){font-size: 36px;padding-bottom: 12px;}
-.wrap_font>ul>li:nth-child(3){font-size: 24px;padding-bottom: 8px;}
+.wrap_font>ul>li:nth-child(2){font-size: 36px;padding-bottom: 10px;}
+.wrap_font>ul>li:nth-child(3){font-size: 24px;padding-bottom: 4px;}
 .wrap_font>ul>li:nth-child(4){font-size: 12px;padding-bottom: 0px;}
-
-
 
 
 
