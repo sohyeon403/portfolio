@@ -186,21 +186,12 @@
         <!-- Swiper JS -->
         <script src="./js/swiper.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!--토글메뉴 제이쿼리 서식 삽입-->
+        <script src="./js/toggle_menu.js"></script>
+        
+        <!--이미지 슬라이드 서식 삽입-->
          <script src="./js/swiper_portfolio.js"></script>
-        <script>
-            let isActive = false;
-
-            $('.js-menu').on('click', function() {
-                if (isActive) {
-                    $(this).removeClass('active');
-                    $('body').removeClass('menu-open');
-                } else {
-                    $(this).addClass('active');
-                    $('body').addClass('menu-open');
-                }
-                isActive = !isActive;
-            });
-        </script>
 
 
 
