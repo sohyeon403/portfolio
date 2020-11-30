@@ -1,72 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    <title>sohyeon's protfolio</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>sohyeon's portfolio</title>
+
     <link href="./css/base.css" rel="stylesheet" type="text/css">
     <link href="./css/reset.css" rel="stylesheet" type="text/css">
-    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <link href="./css/index.css" rel="stylesheet" type="text/css">
+
+
+    <!--   폰트링크-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+
+
+
+
 </head>
 
+<body>
 
-<body>   
-    <header class="clearfix">
-        <h1><a href="index.html" title="메인페이지바로가기">sohyeon</a></h1>
-        <div class="toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+    <header>
+        <div class="header_wrap">
+            <h1><a href="index.html" title="메인페이지로 바로가기"><img src="./img/top_logo_white.png" alt="메인로고"></a></h1>
+
+
+            <div class="gnb_wrap">
+                <ul class="gnb_left">
+                    <li><a href="index.html" title="home">home</a></li>
+                    <li><a href="portfolio_concept.html" title="personal branding">portfolio concept</a></li>
+                    <li><a href="contact.html" title="contact">contact</a></li>
+                </ul>
+
+                <ul class="gnb_right">
+                    <li><a href="introduce.html" title="introduce">introduce</a></li>
+                    <li><a href="portfolio.html" title="portfolio">renewal portfolio</a></li>
+                    <li><a href="project.html" title="project">project</a></li>
+                </ul>
+            </div>
+
+
+            <div class="menu_wrap">
+                <div class="js-menu menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
         </div>
     </header>
-    
-    
-    <section>
-<!--토글 클릭시 나오는 전체 메뉴-->
-       <div class="toggleMenu">
-          <p class="bgText">Menu</p>
-          <nav>
-              <ul>
-                  <li class="clearfix"><a href="#" title="home">home</a></li>
-                  <li class="clearfix"><a href="#" title="profile">profile</a></li>
-                  <li class="clearfix"><a href="#" title="about">about</a></li>
-                  <li class="clearfix"><a href="#" title="ability">ability</a></li>
-                  <li class="clearfix"><a href="#" title="renewal">renewal</a></li>
-                  <li class="clearfix"><a href="#" title="project">project</a></li>
-                  <li class="clearfix"><a href="#" title="contact">contact</a></li>
-              </ul>
-          </nav>
-       </div>
-    </section>
-    
-    
-    <style>
-        .toggleMenu{
-            position: fixed;
-/*            top:-100%;*/
-            right: 0px;
-        }
-        
-        .toggleMenu>nav{
-            position: absolute;
 
-        }
-        
-        .toggleMenu>nav>ul{
-            text-align: right;
-        }
-        
-        
-    </style>
-    
-    
-    
-    <footer></footer>
-    
-    
-    <div class="popup">
-        <div></div>
+
+
+    <nav class="toggleMenu">
+        <ul>
+            <li class="clearfix"><a href="index.html" title="home">home</a></li>
+
+            <li class="clearfix"><a href="portfolio_concept.html" title="personal branding">portfolio concept</a></li>
+
+            <li class="clearfix"><a href="introduce.html" title="introduce">introduce</a></li>
+
+            <li class="clearfix"><a href="portfolio.html" title="protfolio">renewal portfolio</a></li>
+
+            <li class="clearfix"><a href="project.html" title="project">project</a></li>
+
+            <li class="clearfix"><a href="contact.html" title="contact">contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <section>
+
+        <div class='popup_wrap'>
+            <div class='popup_text'>
+                <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.
+                    <br>
+                    사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.
+                    <br>
+                    <a href="" class="close">CLOSE</a>
+                </p>
+            </div>
+
+
+            <div class="popup_chrome">
+                <p>본 사이트는 <span class="chrome">크롬(chrome)</span>에 최적화 되어있습니다. </p>
+            </div>
+        </div>
+
+        <div class="img_wrap">
+            <img src="./img/profile_sketch.png" alt="스케치">
+            <img src="./img/profile_sketch.png" alt="스케치">
+            <img src="./img/profile_sketch.png" alt="스케치">
+        </div>
+
+        <div class="text_wrap">
+            <!--            <p>The most important thing is invisible</p>-->
+        </div>
+
+
+        <article class="keyword">
+            <h3>sohyeon's keywords</h3>
+        </article>
+
+        <article class="text_wrap">
+            <p>various<span class="text_kor">다채로움</span></p>
+            <p>cooperation<span class="text_kor">협동적임</span></p>
+            <p>positive<span class="text_kor">긍정적</span></p>
+            <p>creativity<span class="text_kor">창의적</span></p>
+            <p>prudence<span class="text_kor">신중함</span></p>
+        </article>
+
+
+    </section>
+
+    <div class="brush_wrap">
+        <img src="./img/brush_red.png" alt="">
+        <img src="./img/brush_yellow.png" alt="">
+        <img src="./img/brush_green.png" alt="">
+        <img src="./img/brush_blue.png" alt="">
+        <img src="./img/brush_purple.png" alt="">
     </div>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        let isActive = false;
+
+        $('.js-menu').on('click', function() {
+            if (isActive) {
+                $(this).removeClass('active');
+                $('body').removeClass('menu-open');
+            } else {
+                $(this).addClass('active');
+                $('body').addClass('menu-open');
+            }
+            isActive = !isActive;
+        });
+
+    </script>
+
+    <script>
+        $(function() {
+            const overlay = $('<div id="overlay"></div>');
+            overlay.show();
+            overlay.appendTo(document.body);
+            $('.popup_wrap').show();
+            $('.close').click(function() {
+               $('.popup_text').animate({'top':'280px'},200).delay(100).animate({'top':'-500px','opacity':'.5'},300);
+                return false;
+
+
+
+                const chrome = $('<div id="chrome"></div>');
+                chrome.show();
+                overlay.appendTo(document.body);
+
+            });
+        });
+
+    </script>
+
+
 </body>
+
 </html>
