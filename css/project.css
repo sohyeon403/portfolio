@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+
+section{
+    overflow-x: hidden;
+}
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 120px;
+}
+
+.tab_menu {
+    width: 1280px;
+    margin: 0px auto;
+}
+
+.tab_menu_item {
+    float: left;
+    margin-right: 2px;
+    text-align: center;
+}
+
+.tab_menu_item:last-child {
+    margin-right: 0;
+}
+
+.tab_menu_item_link {
+    display: block;
+    width: 298px;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.tab_menu_item_link:hover,
+.tab_menu_item_link.is-active {
+    background: #f4ea07;
+    color: #000;
+}
+
+.tab_container {}
+
+.tab_content {
+    padding: 20px;
+    display: none;
+}
+
+.tab_content.is-active {
+    display: block;
+    animation: fade 0.5s ease;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.img_wrap img {
+    width: 250px;
+    height: 376px;
+
+}
+
+.img_wrap > li {
+    float: left;
+    padding: 30px 30px;
+}
+
+h2.title {
+    text-transform: uppercase;
+    font-size: 50px;
+    width: 560px;
+    float: left;
+    margin-left: -320px;
+    transform: rotate(-90deg);
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
