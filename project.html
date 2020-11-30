@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <link href="./css/project.css" rel="stylesheet" type="text/css">
+
+
+    <!--   폰트링크-->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <title>sohyeon's portfolio</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header_wrap">
+            <h1><a href="index.html" title="메인페이지로 바로가기"><img src="./img/top_logo_white.png"></a></h1>
+
+
+            <div class="gnb_wrap">
+                <ul class="gnb_left">
+                    <li><a href="index.html" title="home">home</a></li>
+                    <li><a href="portfolio_concept.html" title="personal branding">portfolio concept</a></li>
+                    <li><a href="contact.html" title="contact">contact</a></li>
+                </ul>
+
+                <ul class="gnb_right">
+                    <li><a href="introduce.html" title="introduce">introduce</a></li>
+                    <li><a href="portfolio.html" title="portfolio">renewal portfolio</a></li>
+                    <li><a href="project.html" title="project">project</a></li>
+                </ul>
+            </div>
+
+
+            <div class="menu_wrap">
+                <div class="js-menu menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <nav class="toggleMenu">
+        <ul>
+            <li class="clearfix"><a href="index.html" title="home">home</a></li>
+
+            <li class="clearfix"><a href="portfolio_concept.html" title="personal branding">portfolio concept</a></li>
+
+            <li class="clearfix"><a href="introduce.html" title="introduce">introduce</a></li>
+
+            <li class="clearfix"><a href="portfolio.html" title="protfolio">renewal portfolio</a></li>
+
+            <li class="clearfix"><a href="project.html" title="project">project</a></li>
+
+            <li class="clearfix"><a href="contact.html" title="contact">contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="container">
+       <h2 class="title">project</h2>
+        <div class="tab">
+            <ul class="tab_menu clearfix">
+                <li class="tab_menu_item"><a href="#" data-id="all" class="tab_menu_item_link is-active">all</a></li>
+
+                <li class="tab_menu_item"><a href="#" data-id="works" class="tab_menu_item_link">personal</a></li>
+
+                <li class="tab_menu_item"><a href="#" data-id="contact" class="tab_menu_item_link">Contact</a></li>
+
+                <li class="tab_menu_item"><a href="#" data-id="game" class="tab_menu_item_link">game</a></li>
+
+            </ul>
+
+            <div class="tab_container">
+                <div class="tab_content is-active" id="all">
+                    <ul class="img_wrap">
+                        <li><a href="#" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab_content" id="works">
+                    <ul class="img_wrap">
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab_content" id="contact">
+                    <ul class="img_wrap">
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="tab_content" id="game">
+                    <ul class="img_wrap">
+                        <li><a href="" title=""><img src="./img/sample_text01.png" alt=""></a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        let isActive = false;
+
+        $('.js-menu').on('click', function() {
+            if (isActive) {
+                $(this).removeClass('active');
+                $('body').removeClass('menu-open');
+            } else {
+                $(this).addClass('active');
+                $('body').addClass('menu-open');
+            }
+            isActive = !isActive;
+        });
+
+    </script>
+
+    <script>
+        (function() {
+            'use strict';
+
+            let tabMenus,
+                tabContents;
+            tabMenus = document.querySelectorAll('.tab_menu_item_link');
+            tabContents = document.querySelectorAll('.tab_content');
+
+
+            for (let i = 0; i < tabMenus.length; i++) {
+
+                tabMenus[i].addEventListener('click', function(e) {
+
+                    e.preventDefault();
+
+
+                    for (let i = 0; i < tabMenus.length; i++) {
+                        tabMenus[i].className = 'tab_menu_item_link';
+                    }
+
+                    this.className = 'tab_menu_item_link is-active';
+
+
+                    for (let i = 0; i < tabContents.length; i++) {
+                        tabContents[i].className = 'tab_content';
+                    }
+
+                    document.getElementById(this.dataset.id).className = 'tab_content is-active';
+
+                });
+            }
+        }());
+
+    </script>
+</body>
+
+</html>
