@@ -383,26 +383,14 @@
     <!--제이쿼리 라이브러리-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     
+    <!--토글버튼 메뉴 서식 삽입-->
+    <script src="./js/toggle_menu.js"></script>
+    
     <!--제이쿼리 스킬바 서식 삽입-->
     <script src="./js/skillbar.js"></script>
 
     <!--제이쿼리 탭키 서식 삽입-->
     <script src="./js/tab.js"></script>
-
-    <script>
-        let isActive = false;
-
-        $('.js-menu').on('click', function() {
-            if (isActive) {
-                $(this).removeClass('active');
-                $('body').removeClass('menu-open');
-            } else {
-                $(this).addClass('active');
-                $('body').addClass('menu-open');
-            }
-            isActive = !isActive;
-        });
-    </script>
 
 
 
