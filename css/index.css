@@ -33,8 +33,8 @@ body {
     position: absolute;
     top: 130px;
     left: 10px;
-    letter-spacing: 10px;
-    z-index: 10;
+    letter-spacing: 4px;
+    z-index: 12;
 }
 
 .popup_text p {
@@ -46,6 +46,17 @@ body {
 
 }
 
+.popup_chrome,
+.btn_close {
+    color: #000;
+}
+
+.btn_close:hover {
+    color: #d91900;
+    font-weight: bold;
+    transition: .5s;
+}
+
 .popup_text p a {
     color: #d91900;
     letter-spacing: 2px;
@@ -54,7 +65,7 @@ body {
 
 
 .popup_chrome {
-    background: rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.6);
     color: #333;
     padding: 10px;
 }
@@ -77,6 +88,7 @@ article.keyword {
     z-index: 9999;
 }
 
+
 article > h3 {
     position: absolute;
     top: 200px;
@@ -86,10 +98,6 @@ article > h3 {
     font-family: 'Nanum Brush Script', cursive;
 }
 
-span.text_kor {
-    padding-left: 50px;
-    font-family: 'Nanum Brush Script', cursive;
-}
 
 .img_wrap > img {
     position: absolute;
@@ -113,15 +121,16 @@ span.text_kor {
     opacity: 0.2;
 }
 
-.brush_wrap > img {
-    position: absolute;
-    opacity: 0.8;
+
+.brush_wrap{
+    position: relative;
 }
+.brush_wrap>img{position: absolute;}
 
 .brush_wrap > img:first-child {
     top: 0px;
+    left: -100px;
     width: 824px;
-    left: 30px;
     transform: rotate(20deg);
     animation: scale01 0.5s linear 1;
 }
@@ -160,7 +169,7 @@ span.text_kor {
 
 .brush_wrap > img:nth-child(2) {
     width: 600px;
-    left: 380px;
+    left: 300px;
     top: 100px;
     animation: scale02 1.2s linear 1;
 }
@@ -238,8 +247,8 @@ span.text_kor {
 
 
 .brush_wrap > img:nth-child(4) {
-    width: 800px;
-    right: -20px;
+    width: 760px;
+    right: -170px;
     top: -40px;
     animation: scale04 1.5s linear 1;
 }
@@ -278,10 +287,10 @@ span.text_kor {
 
 
 .brush_wrap > img:nth-child(5) {
-    width: 450px;
-    right: 150px;
-    top: 300px;
-    animation: scale05 2s linear 1;
+    width: 580px;
+    right: -150px;
+    top: 240px;
+    animation: scale05 2.5s linear 1;
 }
 
 @keyframes scale05 {
@@ -318,12 +327,25 @@ span.text_kor {
 
 .text_wrap {
     position: absolute;
-    padding-top: 290px;
+    width: 700px;
+    padding-top: 250px;
     font-family: 'Nanum Brush Script', cursive;
-    font-size: 70px;
+
     color: #fff;
     z-index: 10;
     opacity: .9;
+}
+
+
+p.eng {
+    font-size: 50px;
+    line-height: 54px;
+    font-weight: 500;
+}
+
+p.kor {
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .text_wrap > p {
