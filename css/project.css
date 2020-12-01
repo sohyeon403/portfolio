@@ -70,9 +70,9 @@ section {
 
 }
 
-.img_wrap > li {
+.img_wrap>li {
     float: left;
-    padding: 30px 30px;
+    margin: 30px;
 }
 
 h2.title {
@@ -87,22 +87,29 @@ h2.title {
     font-weight: bold;
 }
 
-.img_wrap > li {
+.img_wrap>li {
     position: relative;
     overflow: hidden;
 }
 
 .caption {
-    font-weight: bold;
-    font-size: 18px;
     position: absolute;
-    left: 30px;
-    bottom: -82px;
+    bottom: -80px;
     width: 100%;
     background-color: rgba(0, 0, 0, .7);
     transition: 0.5s;
+    padding: 16px;
 }
 
-.img_wrap > li:hover .caption {
+.caption_title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.caption_sub {
+    font-size: 14px;
+}
+
+.img_wrap>li:hover .caption {
     bottom: 0px;
 }
