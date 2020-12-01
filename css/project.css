@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
 
-section{
+section {
     overflow-x: hidden;
 }
+
 .container {
     width: 1280px;
     margin: 0 auto;
@@ -84,4 +85,24 @@ h2.title {
     font-family: 'Do Hyeon', sans-serif;
     letter-spacing: 10px;
     font-weight: bold;
+}
+
+.img_wrap > li {
+    position: relative;
+    overflow: hidden;
+}
+
+.caption {
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 30px;
+    bottom: -82px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    transition: 0.5s;
+}
+
+.img_wrap > li:hover .caption {
+    bottom: 0px;
 }
