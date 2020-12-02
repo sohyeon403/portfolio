@@ -66,8 +66,7 @@ section {
 
 .img_wrap img {
     width: 250px;
-    height: 376px;
-
+    height: 360px;
 }
 
 .img_wrap>li {
@@ -94,20 +93,22 @@ h2.title {
 
 .caption {
     position: absolute;
-    bottom: -80px;
+    bottom: -120px;
     width: 100%;
     background-color: rgba(0, 0, 0, .7);
     transition: 0.5s;
-    padding: 16px;
+    padding: 10px 2px;
 }
 
 .caption_title {
     font-weight: bold;
     font-size: 18px;
+    line-height: 20px;;
 }
 
 .caption_sub {
     font-size: 14px;
+    padding: 0px 2px;
 }
 
 .img_wrap>li:hover .caption {
