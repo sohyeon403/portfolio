@@ -65,13 +65,13 @@ section {
 }
 
 .img_wrap img {
-    width: 250px;
-    height: 300px;
+    width: 160px;
+    height: 200px;
 }
 
 .img_wrap>li {
     float: left;
-    margin: 30px;
+    margin: 8px;
 }
 
 h2.title {
