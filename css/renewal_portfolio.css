@@ -94,12 +94,13 @@ h2.title {
     font-size: 20px;
     line-height: 40px;
     text-align: center;
-    display: none;
+   opacity: 0;
+   transition: 0.3s;
 }
 
 .swiper-slide .imgbox:hover > p.img_sub {
-    display: block;
-    transition: 0.1s;
+    opacity: 1;
+    
 }
 
 
