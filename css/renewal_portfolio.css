@@ -71,14 +71,14 @@ h2.title {
 
 
 .swiper-slide .imgbox {
-    width: 630px;
+    width: 620px;
     height: 500px;
     margin-bottom: 15px;
     overflow: hidden;
 }
 
 .swiper-slide .imgbox img {
-    width: 630px;
+    width: 620px;
     height: 500px;
     object-fit: cover;
 }
@@ -87,7 +87,7 @@ h2.title {
     position: absolute;
     top: 0px;
     padding: 20px 30px;
-    width: 630px;
+    width: 620px;
     height: 500px;
     background: rgba(0,0,0,.7);
     box-sizing: border-box;
@@ -96,6 +96,7 @@ h2.title {
     text-align: center;
    opacity: 0;
    transition: 0.3s;
+   box-sizing: border-box;
 }
 
 .swiper-slide .imgbox:hover > p.img_sub {
@@ -147,8 +148,15 @@ span.sub_eng {
     line-height: 20px;
 }
 
-
-
+.number{
+    font-size: 48px;
+    font-weight: bold;
+    padding: 20px;
+}
+span.emp_red{
+    color:#ff0000;
+    font-weight: 900;
+}
 
 
 /* 자세히보기 버튼 */
