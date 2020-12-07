@@ -91,7 +91,8 @@
 
 
             <div class="popup_chrome">
-                <p>본 사이트는 <span class="chrome">크롬(chrome)</span>에 최적화 되어있습니다. <a href="" class="btn_close">&#91;닫기&#93;</a> </p>
+                <p>본 사이트는 <span class="chrome">크롬(chrome)</span>에 최적화 되어있습니다. <a href=""
+                        class="btn_close">&#91;닫기&#93;</a> </p>
             </div>
         </div>
 
@@ -101,26 +102,25 @@
             <img src="./img/profile_sketch.png" alt="스케치">
         </div>
 
-    <div class="brush_wrap">
-        <img src="./img/brush_red.png" alt="">
-        <img src="./img/brush_yellow.png" alt="">
-        <img src="./img/brush_green.png" alt="">
-        <img src="./img/brush_blue.png" alt="">
-        <img src="./img/brush_purple01.png" alt="">
-    </div>
+        <div class="brush_wrap">
+            <img src="./img/brush_red.png" alt="">
+            <img src="./img/brush_yellow.png" alt="">
+            <img src="./img/brush_green.png" alt="">
+            <img src="./img/brush_blue.png" alt="">
+            <img src="./img/brush_purple01.png" alt="">
+        </div>
 
-<!--
+        <!--
         <article class="keyword">
             <h3>sohyeon's keywords</h3>
         </article>
 -->
 
         <article class="text_wrap">
-       
+
             <p class="eng">yesterday is history, tommorow is a mistery,
-            and today is a gift. <br>That's why we call it present.</p>
-            <br>
-            <p class="kor">어제는 지나간 역사이며, 내일은 알 수 없는 불가사의다. 하지만 오늘은 선물이라한다. <br> 그것이 우리가 오늘을 PRESENT(선물)이라고 부르는 이유다.</p>
+                and today is a gift. That's why we call it present.</p>
+            <p class="kor">어제는 지나간 역사이며, 내일은 알 수 없는 불가사의다. 하지만 오늘은 선물이라한다. 그것이 우리가 오늘을 PRESENT(선물)이라고 부르는 이유다.</p>
         </article>
 
 
@@ -135,6 +135,23 @@
 
     <!--팝업창 서식-->
     <script src="./js/popup.js"></script>
+
+    <script>
+        const typeWriter = selector => {
+            const el = document.querySelector(selector);
+            const text = el.innerHTML;
+
+            (function _type(i = 0) {
+                if (i === text.length) return;
+
+                el.innerHTML =
+                    text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+                setTimeout(() => _type(i + 1), 50);
+            })();
+        };
+
+        typeWriter(".text_wrap");
+    </script>
 
 
 </body>

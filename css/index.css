@@ -89,7 +89,7 @@ article.keyword {
 }
 
 
-article > h3 {
+article>h3 {
     position: absolute;
     top: 200px;
     font-size: 78px;
@@ -99,35 +99,38 @@ article > h3 {
 }
 
 
-.img_wrap > img {
+.img_wrap>img {
     position: absolute;
     z-index: 10;
 }
 
-.img_wrap > img:first-child {
+.img_wrap>img:first-child {
     top: 160px;
     right: 10px;
 }
 
-.img_wrap > img:nth-child(2) {
+.img_wrap>img:nth-child(2) {
     top: 170px;
     right: 15px;
     opacity: 0.4;
 }
 
-.img_wrap > img:nth-child(3) {
+.img_wrap>img:nth-child(3) {
     top: 165px;
     right: 12px;
     opacity: 0.2;
 }
 
 
-.brush_wrap{
+.brush_wrap {
     position: relative;
 }
-.brush_wrap>img{position: absolute;}
 
-.brush_wrap > img:first-child {
+.brush_wrap>img {
+    position: absolute;
+}
+
+.brush_wrap>img:first-child {
     top: 0px;
     left: -100px;
     width: 824px;
@@ -167,7 +170,7 @@ article > h3 {
     }
 }
 
-.brush_wrap > img:nth-child(2) {
+.brush_wrap>img:nth-child(2) {
     width: 600px;
     left: 300px;
     top: 100px;
@@ -206,7 +209,7 @@ article > h3 {
     }
 }
 
-.brush_wrap > img:nth-child(3) {
+.brush_wrap>img:nth-child(3) {
     width: 700px;
     left: 40px;
     top: 180px;
@@ -246,7 +249,7 @@ article > h3 {
 }
 
 
-.brush_wrap > img:nth-child(4) {
+.brush_wrap>img:nth-child(4) {
     width: 760px;
     right: -170px;
     top: -40px;
@@ -286,7 +289,7 @@ article > h3 {
 }
 
 
-.brush_wrap > img:nth-child(5) {
+.brush_wrap>img:nth-child(5) {
     width: 580px;
     right: -150px;
     top: 240px;
@@ -325,16 +328,33 @@ article > h3 {
     }
 }
 
+
+
 .text_wrap {
     position: absolute;
     width: 700px;
-    padding-top: 250px;
+    padding-top: 300px;
+    padding-left: 30px;
     font-family: 'Nanum Brush Script', cursive;
-
     color: #fff;
     z-index: 10;
     opacity: .9;
 }
+
+.text_wrap>span {
+    font-size: 40px;
+    border-right: 3px solid;
+    animation: caret 0.5s steps(1) infinite;
+    z-index: 999;
+}
+
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
 
 
 p.eng {
@@ -348,6 +368,6 @@ p.kor {
     line-height: 30px;
 }
 
-.text_wrap > p {
+.text_wrap>p {
     padding: 4px 42px;
 }
