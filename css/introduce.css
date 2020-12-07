@@ -122,13 +122,17 @@ div.main {
 
 
 /*aboutME영역*/
-.about_list{display: flex;}
-.about_list>li{padding: 40px 60px; }
+.about_title>li{padding: 40px 60px; }
 .about_title{
+    float: left;
     font-size: 24px;
     font-weight: bold;
+    width: 300px;
+    background-color: aquamarine;
 }
-
+.flo_left{
+    float: left;
+}
 /*ability영역*/
 .content #tab3 {
     width: 100%;
@@ -185,7 +189,7 @@ div.main {
     height: 20px;
     width: 0px;
     background: #d6b70e;
-    opacity: 0.2s;
+    opacity: 0.2;
     border-radius: 3px;
     float: left;
 }
