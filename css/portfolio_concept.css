@@ -95,7 +95,7 @@ p.equal {
 }
 
 article.logo_design {
-    height: 324px;
+    height: 320px;
 }
 .logo_text{
         margin-left: 600px;
@@ -103,12 +103,12 @@ article.logo_design {
 }
 
 article.portfolio_design {
-    height: 250px;
+    height: 200px;
 }
 
 article.portfolio_color {
     position: relative;
-    height: 180px;
+    height: 120px;
 }
 
 article.portfolio_color .main_paragraph{
@@ -129,7 +129,12 @@ article.portfolio_color .main_paragraph{
     height: 30px;
     top: 4px;
 }
-
+.color_wrap p{
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    letter-spacing: 2px;
+}
 
 .color_white{
     background: #fff;
@@ -173,6 +178,15 @@ ul.wrap_font_dohyeon, .dohyeon{
     font-family: 'Do Hyeon', sans-serif;
 }
 
+
+ul.wrap_font_nanum, .nanum{
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+#nanum_wrap{
+    padding-bottom: 140px;
+}
+
 .yellow {
     color: #ffff00;
     font-weight: 500;
@@ -180,7 +194,7 @@ ul.wrap_font_dohyeon, .dohyeon{
 
 
 article.portfolio_structure{
-    height: 200px;
+    height: 100px;
 }
 
 .typogrhapy{
