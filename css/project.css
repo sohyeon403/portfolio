@@ -102,13 +102,13 @@ h2.title {
 
 .caption_title {
     font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;;
+    font-size: 16px;
+    line-height: 18px;;
 }
 
 .caption_sub {
     font-size: 14px;
-    padding: 0px 2px;
+    padding: 0px 2.5px;
 }
 
 .img_wrap>li:hover .caption {
