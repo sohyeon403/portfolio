@@ -122,21 +122,26 @@ div.main {
 
 
 /*aboutME영역*/
-.about_title>li{padding: 40px 60px; }
-.about_title{
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
+#tab2 dl{
+    width: 1200px;
+}
+
+#tab2 dt{
     width: 300px;
-    background-color: aquamarine;
+    font-size: 24px;
+    padding: 100px 0px;
+
 }
-.flo_left{
-    float: left;
+
+#tab2 dd{
+    float: right;
 }
+
+
 /*ability영역*/
 .content #tab3 {
     width: 100%;
-    background-color: rgba(255, 255, 255, .01);
+    background-color: rgba(255, 255, 255,.0);    
 }
 
 .content #tab3 ul.code img {
