@@ -19,7 +19,7 @@
         .bar,
         .bar::before,
         .bar::after {
-            transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear, 0.2s transform linear;
+            transition: 0.2s linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear, 0.2s transform linear;
             position: absolute;
             background: #fff;
             /*  margin: auto;*/
@@ -141,8 +141,8 @@
         }
 
         .gnb_left {
-            padding: 0px -20px 0px 100px;
-            width:600px;
+            padding-left: 98px;
+            width:400px;
             z-index: 20;
         }
 
