@@ -93,7 +93,7 @@ h2.title {
     box-sizing: border-box;
     font-size: 20px;
     line-height: 40px;
-    text-align: center;
+    text-align: justify;
    opacity: 0;
    transition: 0.3s;
    box-sizing: border-box;
