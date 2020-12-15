@@ -3,7 +3,7 @@
 body {
     width: 100%;
     position: relative;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: 'Noto Sans KR', sans-serif !important;
 }
 
@@ -44,7 +44,7 @@ section {
     display: none;
     background-color: rgba(0, 0, 0, .2);
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .items::before {
@@ -122,21 +122,40 @@ div.main {
 
 
 /*aboutME영역*/
-#tab2 dl{
-    width: 1200px;
+.f_left{
+    font-size: 36px;
+    float: left;
+    padding: 10px;
+    font-family: 'Do Hyeon', sans-serif;
 }
-
-#tab2 dt{
-    width: 300px;
-    font-size: 24px;
-    padding: 100px 0px;
-
+.f_left li{
+    padding: 40px 20px;
 }
-
-#tab2 dd{
+.f_left li:nth-child(3){padding: 70px 20px;}
+.f_right{
     float: right;
+    font-size: 24px;
+    position: relative;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 1px;
+}
+.f_right li{
+    line-height: 34px;
+    position: absolute;
+    right: 80px;
+    width: 700px;
 }
 
+.f_right li:first-child{
+    top: 50px;
+}
+.f_right li:nth-child(2){
+    top: 150px;
+}
+
+.f_right li:nth-child(3){
+    top: 300px;
+}
 
 /*ability영역*/
 .content #tab3 {
