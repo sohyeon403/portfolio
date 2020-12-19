@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
 @media screen and (max-width:1023px){
+.gggg{padding: 50px;
+font-size: 36px;
+line-height: 40px;}
+    .poopup_wrap, .popup_chrome{
+        display: none;
+    }
     body {
         overflow: hidden;
         background: #333;
-        background-image: url(../img/background.jpg);
+        /* background-image: url(../img/background.jpg);
         background-size: 100%;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
         z-index: 5;
     }
 

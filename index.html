@@ -13,7 +13,7 @@
 
     <link href="./css/header.css" rel="stylesheet" type="text/css">
     <link href="./css/m_header.css" rel="stylesheet" type="text/css">
-    
+
     <link href="./css/index.css" rel="stylesheet" type="text/css">
     <link href="./css/mindex.css" rel="stylesheet" type="text/css">
  
@@ -100,6 +100,10 @@
                 <p>본 사이트는 <span class="chrome">크롬(chrome)</span>에 최적화 되어있습니다. <a href=""
                         class="btn_close">&#91;닫기&#93;</a> </p>
             </div>
+
+            <div class="gggg">
+                <p>현재 모바일(반응형)작업 중 입니다. <br>PC버전으로 감상부탁드립니다. :)</p>
+            </div>
         </div>
 
         <div class="img_wrap">
@@ -158,6 +162,23 @@
 
         typeWriter(".text_wrap");
     </script>
+
+<script>
+    //사용자가 접속한 디바이스 체크하기
+    var mobile_keys = new Array('iPhone', 'iPod', 'Android', 'BlackBerry', 'WindowsPhone', 'Windows CE', 'LG',
+        'MOT', 'SAMSUNG', 'SonyEricsson', 'Nokia');
+
+    if (document.URL.match('move_pc_screen')) mobile_keys = null;
+    //URL 파라미터에 'move_pc_screen'가 포함되어 있을 땐 적용 안함.
+
+    //위 배열 값 개수만큼 반복하여 검사를 하고 모바일 사용자이면 아래 내용을 실행.
+    for (i in mobile_keys) { //in키워드 : 키값이 있으면 true 없으면 false
+        if (navigator.userAgent.match(mobile_keys[i]) != null) {
+            location.href = "http://sohye0n.dothome.co.kr/0814/mindex.html"; //모바일 홈 연결주소
+            break;
+        }
+    }
+</script>
 
 
 </body>
