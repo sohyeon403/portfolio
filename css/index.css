@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@media screen and (min-width:1024px) {
+
 body {
     overflow: hidden;
     background: #333;
@@ -370,4 +372,6 @@ p.kor {
 
 .text_wrap>p {
     padding: 4px 42px;
+}
+
 }
