@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media screen and (max-width:1023px) {
+    h2{
+        display: none;
+    }
+
+    section{
+        display: none;
+    }
+
+    .concept_img{
+        width: 100%;
+    }
+}
