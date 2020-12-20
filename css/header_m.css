@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@media screen and (max-width:1023px) {
+
+
+    .menu {
+        transition: 0.1s;
+        position: relative;
+        /* float: left; */
+        margin: -48px 4%;
+        height: 11%;
+        width: 42px;
+        z-index: 30;
+        cursor: pointer;
+    }
+
+
+    .bar,
+    .bar::before,
+    .bar::after {
+        transition: 0.2s linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear, 0.2s transform linear;
+        position: absolute;
+        background: #fff;
+        /*  margin: auto;*/
+        width: 100%;
+        height: 5px;
+        content: '';
+        top: 0;
+        left: 0;
+    }
+
+    .bar {
+        margin: 10px 0px;
+    }
+
+    .bar::before {
+        top: -15px;
+    }
+
+    .bar::after {
+        top: 15px;
+    }
+
+    .bar::before,
+    .bar::after {
+        transform: rotate(0deg);
+    }
+
+    .active .bar {
+        background: 0;
+    }
+
+    .active .bar::before {
+        transform: rotate(45deg);
+    }
+
+    .active .bar::after {
+        transform: rotate(-45deg);
+    }
+
+    .active .bar::before,
+    .active .bar::after {
+        top: 0;
+    }
+
+    .active .bar,
+    .active .bar::before,
+    .active .bar::after {
+        transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s transform linear 0.2s;
+    }
+
+    nav {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .8);
+        position: fixed;
+        transform: translateX(-100%);
+        transition: 0.6s;
+        padding-top: 1%;
+        z-index: 20;
+        font-family: 'Do Hyeon', sans-serif !important;
+        letter-spacing: 1%;
+    }
+
+    .menu-open nav.toggleMenu {
+        transform: translateX(0);
+    }
+
+
+    nav ul li {
+        padding: 35px 0px 35px 0px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    nav ul li>a {
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    nav ul li a:hover {
+        font-weight: 900;
+        color: #fff500;
+        transition: 0.4s;
+    }
+
+    header {
+        position: relative;
+        overflow-x: hidden;
+        width: 100%;
+        height: 12vh;
+    }
+    .header_wrap{
+        background: #333;
+    }
+
+    .popup_wrap {
+        display: none !important;
+    }
+
+    .gnb_left,
+    .gnb_right{
+        display: none;
+    }
+
+    header h1{
+        text-align: center;
+    }
+    header h1>a>img{
+        width: 72px;
+    }
+
+
+
+
+    img {
+        width: 50%;
+    }
+
+}
