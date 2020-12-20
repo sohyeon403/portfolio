@@ -6,7 +6,11 @@
         font-size: 24px;
         padding: 10px;
         line-height: 28px;
-        color:#ffff00
+        color:#ffff00;
+        position:absolute;
+        bottom: 10px;
+        z-index: 9;;
+    
     }
     .menu {
         transition: 0.1s;
@@ -117,7 +121,7 @@
         height: 12vh;
     }
     .header_wrap{
-        background: #333;
+        background: #000;
     }
 
     .popup_wrap {
