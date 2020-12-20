@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@media screen and (min-width:1024px){
 
 section {
     overflow-x: hidden;
@@ -28,7 +28,7 @@ section {
 
 .tab_menu_item_link {
     display: block;
-    width: 298px;
+    width: 402px;
     padding: 10px;
     background: #222;
     color: #fff;
@@ -113,4 +113,6 @@ h2.title {
 
 .img_wrap>li:hover .caption {
     bottom: 0px;
+}
+
 }
