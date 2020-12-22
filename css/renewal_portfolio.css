@@ -104,7 +104,8 @@ h3{
         box-sizing: border-box;
     }
 
-    .swiper-slide .imgbox:hover>p.img_sub {
+    .swiper-slide .imgbox:hover>p.img_sub,
+    .swiper-slide .imgbox:hover>.hashtag_wrap {
         opacity: 1;
 
     }
@@ -266,12 +267,21 @@ h3{
 
     .hashtag{
         font-size:12px;
-        padding: 4px 12px;
+        padding: 4px 10px;
         border: 1px solid #ccc;
-        margin:0px 8px;
+        margin:0px 4px;
         line-height: 10px !important;
         border-radius: 2px;
         background: #ccc;
         color:#333;
+    }
+
+    .hashtag_wrap{
+        position: absolute;
+        /* height: 50px; */
+        line-height: 32px;
+        bottom: 304px;
+        opacity: 0;
+        margin: 0px 10px;
     }
 }

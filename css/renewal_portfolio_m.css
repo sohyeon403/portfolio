@@ -9,7 +9,7 @@
     padding-top: 120px;
     width: 96%;
     margin: 2% 2% 0 0;
-    height: 800px;
+    /* height: 800px; */
 }
 
 .swiper-wrapper {
@@ -20,7 +20,7 @@
 }
 
 .swiper-slide {
-    background-color: #333;
+    background-color:rgba(0,0,0,.2);
     box-sizing: border-box;
     position: relative;
     transition: 1.2s;
@@ -33,6 +33,7 @@
 
 
 .swiper-slide .imgbox {
+    position: relative;
     width: 100%;
     height: 350px;
     margin-bottom: 15px;
@@ -50,20 +51,21 @@
 .swiper-slide p.img_sub {
     position: absolute;
     top: 0px;
-    padding: 20px 10px;
+    padding: 20px 4%;
     width: 100%;
     height: 350px;
     background: rgba(0,0,0,.7);
     box-sizing: border-box;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 144%;
     text-align: justify;
    opacity: 0;
    transition: 0.3s;
    box-sizing: border-box;
 }
 
-.swiper-slide .imgbox:hover > p.img_sub {
+.swiper-slide .imgbox:hover > p.img_sub,
+.swiper-slide .imgbox:hover > .hashtag_wrap {
     opacity: 1;
     
 }
@@ -110,14 +112,14 @@ span.sub_eng {
 .text_sub {
     display: inline-block;
     width: 74%;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 22px;
 }
 
 .number{
-    font-size: 60px;
+    font-size: 36px;
     font-weight: bold;
-    padding: 30px;
+    padding: 10px;
 }
 span.emp_red{
     color:#ff0000;
@@ -183,7 +185,7 @@ span.emp_red{
 .swiper-slide .morebtn::after,
 .swiper-slide .morebtn_m::after {
     content: "";
-    width: 140px;
+    width: 100px;
     height: 32px;
     display: block;
     background: #fff;
@@ -219,5 +221,27 @@ span.ing{
     position:absolute;
     left: 50%;
     transform: translateX(-50%);
+
+    
+}
+
+.hashtag{
+    font-size:10px;
+    padding: 1px 2px;
+    /* border: 1px solid #ccc; */
+    /* margin:0px 0px; */
+    /* line-height: 10px !important; */
+    border-radius: 2px;
+    background: #ccc;
+    color:#333;
+}
+.hashtag_wrap{
+    width: 98%;
+    position: absolute;
+    bottom: 4px;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 20px;
 }
 }
