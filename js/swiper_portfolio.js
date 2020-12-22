@@ -19,12 +19,12 @@ let mql = window.matchMedia("screen and (max-height: 1300px)");
                             spaceBetween: 30
                         },
                         // when window width is >= 640px
-                        768: {
-                            //				slidesPerView: 2,
-                            //				spaceBetween: 30,
-                        },
+                        // 768: {
+                        //     //				slidesPerView: 2,
+                        //     //				spaceBetween: 30,
+                        // },
                         // when window width is >= 640px
-                        1200: {
+                        1024: {
                             slidesPerView: 2,
                             spaceBetween: 30,
                         }
@@ -60,7 +60,7 @@ let mql = window.matchMedia("screen and (max-height: 1300px)");
                             //		slidesPerColumnFill: 'column',
                         },
                         // when window width is >= 640px
-                        1200: {
+                        1024: {
                             slidesPerView: 2,
                             spaceBetween: 30,
                             slidesPerColumn: 2,
