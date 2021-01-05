@@ -39,6 +39,10 @@ section {
     position: relative;
     font-family: 'Do Hyeon', sans-serif;
 }
+    
+    #tab2{
+        padding-bottom: 40px;
+    }
 
 .items {
     width: 100%;
