@@ -272,29 +272,11 @@ p.kor {
     line-height: 1.4rem;
 }
 
-/* 
-
-.text_wrap>span {
-    font-size: 40px;
-    border-right: 3px solid;
-    animation: caret 0.5s steps(1) infinite;
-    z-index: 999;
+footer{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
-
-
-@keyframes caret {
-    50% {
-        border-color: transparent;
-    }
-}
-
-
-
-
-
-.text_wrap>p {
-    padding: 4px 42px;
-} */
-
 
 }

@@ -375,4 +375,12 @@ p.kor {
     padding: 4px 42px;
 }
 
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 }
