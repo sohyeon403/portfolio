@@ -169,5 +169,23 @@
         color: #fff500;
         text-decoration: underline;
     }
+    
+    
+    
+/*푸터영역*/
+        footer{
+        clear: both;
+        width: 1280px;
+        margin: 0px auto !important;
+        height: 80px;
+        text-align: center;
+/*        margin: 50px 0px;*/
+    }
+    
+    footer p{
+        padding: 35px;
+        font-size: 12px;
+        font-weight: 100;
+    }
 }
 
